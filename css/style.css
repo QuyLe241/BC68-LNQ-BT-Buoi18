@@ -4,6 +4,11 @@
 
 }
 
+.card_container {
+    background-color: rgb(240, 244, 246);
+
+}
+
 .title_start {
     font-size: 20px;
     font-weight: 600;
