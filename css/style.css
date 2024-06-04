@@ -3,3 +3,40 @@
     background: linear-gradient(90deg, rgba(2,0,36,1) 0%, rgba(7,47,146,1) 88%, rgba(0,212,255,1) 99%);
 
 }
+
+.title_start {
+    font-size: 20px;
+    font-weight: 600;
+
+}
+
+.callout_div {
+    box-shadow: 3px 3px 5px rgb(209, 205, 205);
+    border-radius: 5px;
+    position: relative;
+
+
+}
+
+callout_div::before {
+    content: "";
+    position: absolute;
+    background-color: rgba(255,193,7,0.5);
+    top: 0;
+    left: 0;
+    /* bottom: 0; */
+    height: 100%;
+    width: 3px;
+
+}
+
+.div_input input {
+    box-shadow: 3px 3px 5px rgb(213, 212, 209);
+
+}
+
+.btn-primary {
+    box-shadow: 2px 2px 5px rgb(187, 184, 184);
+
+
+}
