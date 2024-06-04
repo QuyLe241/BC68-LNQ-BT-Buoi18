@@ -38,556 +38,559 @@
   </head>
 
   <body>
-    <div class="container py-5">
-      <div class="card w-75 mx-auto">
-        <div class="bg-holder d-none d-lg-block bg-card"></div>
-        <div class="card-body position-relative p-0">
-          <div class="row p-0">
-            <div
-              class="col-12 col-md-8 col-lg-9 col-xl-10 tab-content mx-auto"
-              id="v-pills-tabContent"
-            >
+    <div class="bg_body">
+      <div class="container py-5">
+        <div class="card w-75 mx-auto">
+          <div class="bg-holder d-none d-lg-block bg-card"></div>
+          <div class="card-body position-relative p-0">
+            <div class="row p-0">
               <div
-                class="tab-pane fade show active"
-                id="bai1"
-                role="tabpanel"
-                aria-labelledby="v-pills-home-tab"
+                class="col-12 col-md-8 col-lg-9 col-xl-10 tab-content mx-auto"
+                id="v-pills-tabContent"
               >
-                <div class="callout callout-warning">
-                  <h3 class="text-center">Đang update phần js ạ !-!</h3>
-                  <p class="text-center mt-3">
-                    Lê Nhất Quý - BC68 - BT Buổi 18
-                  </p>
-                </div>
-                <form class="row gy-3 align-items-center py-3">
-                  <div class="col-12 col-lg-6">
-                    <input
-                      type="number"
-                      class="form-control form__input"
-                      id="inputNum"
-                      placeholder="Nhập số N"
-                    />
+                <div
+                  class="tab-pane fade show active"
+                  id="bai1"
+                  role="tabpanel"
+                  aria-labelledby="v-pills-home-tab"
+                >
+                  <div class="callout callout-warning">
+                    <h3 class="text-center">Đang update phần js ạ !-!</h3>
+                    <p class="text-center mt-3">
+                      Lê Nhất Quý - BC68 - BT Buổi 18
+                    </p>
                   </div>
-                  <div class="col-12 col-lg-6">
-                    <button
-                      class="btn btn-primary ms-5 mb-1"
-                      type="button"
-                      onclick="getNumber()"
-                    >
-                      Thêm Số
-                    </button>
-                  </div>
-                  <div class="alert alert-success" role="alert">
-                    <span id="txtArray"
-                      ><i class="fa-solid fa-arrow-right"></i
-                    ></span>
-                  </div>
-                </form>
-                <div class="accordion" id="accordionExample">
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingOne">
+                  <form class="row gy-3 align-items-center py-3">
+                    <div class="col-12 col-lg-6">
+                      <input
+                        type="number"
+                        class="form-control form__input"
+                        id="inputNum"
+                        placeholder="Nhập số N"
+                      />
+                    </div>
+                    <div class="col-12 col-lg-6">
                       <button
-                        class="accordion-button collapsed"
+                        class="btn btn-primary ms-5 mb-1"
                         type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseOne"
-                        aria-expanded="false"
-                        aria-controls="collapseOne"
+                        onclick="getNumber()"
                       >
-                        1️ - Tổng số dương
+                        Thêm Số
                       </button>
-                    </h2>
-                    <div
-                      id="collapseOne"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingOne"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="callout callout-info">
-                          <p class="mb-0">Sơ đồ khối</p>
-                          <!-- <details>
+                    </div>
+                    <div class="alert alert-success" role="alert">
+                      <span id="txtArray"
+                        ><i class="fa-solid fa-arrow-right"></i
+                      ></span>
+                    </div>
+                  </form>
+                  <div class="accordion" id="accordionExample">
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingOne">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseOne"
+                          aria-expanded="false"
+                          aria-controls="collapseOne"
+                        >
+                          1️ - Tổng số dương
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseOne"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingOne"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="callout callout-info">
+                            <p class="mb-0">Sơ đồ khối</p>
+                            <!-- <details>
                                                   <summary>Mở rộng để xem thêm</summary>                                   
                                               </details> -->
+                          </div>
+                          <form class="row gy-3 align-items-center px-2">
+                            <div class="col-12">
+                              <button
+                                class="btn btn-primary me-1 mb-1"
+                                type="button"
+                                onclick="sumPositive()"
+                              >
+                                Tính tổng
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtSum">Kết Quả</span>
+                            </div>
+                          </form>
                         </div>
-                        <form class="row gy-3 align-items-center px-2">
-                          <div class="col-12">
-                            <button
-                              class="btn btn-primary me-1 mb-1"
-                              type="button"
-                              onclick="sumPositive()"
-                            >
-                              Tính tổng
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtSum">Kết Quả</span>
-                          </div>
-                        </form>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTwo"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTwo"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          2️ - Đếm số dương
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTwo"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
                       >
-                        2️ - Đếm số dương
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTwo"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="callout callout-info">
-                          <p class="mb-0">Sơ đồ khối</p>
-                          <!-- <details>
+                        <div class="accordion-body">
+                          <div class="callout callout-info">
+                            <p class="mb-0">Sơ đồ khối</p>
+                            <!-- <details>
                                                   <summary>Mở rộng để xem thêm</summary>                                   
                                               </details> -->
+                          </div>
+                          <form class="row gy-3 align-items-center px-2">
+                            <div class="col-12">
+                              <button
+                                class="btn btn-primary me-1 mb-1"
+                                type="button"
+                                onclick="countPositive()"
+                              >
+                                Đếm số
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtCount">Kết Quả</span>
+                            </div>
+                          </form>
                         </div>
-                        <form class="row gy-3 align-items-center px-2">
-                          <div class="col-12">
-                            <button
-                              class="btn btn-primary me-1 mb-1"
-                              type="button"
-                              onclick="countPositive()"
-                            >
-                              Đếm số
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtCount">Kết Quả</span>
-                          </div>
-                        </form>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseThree"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseThree"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          3️ - Tìm số nhỏ nhất
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseThree"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
                       >
-                        3️ - Tìm số nhỏ nhất
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseThree"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="callout callout-info">
-                          <p class="mb-0">Sơ đồ khối</p>
+                        <div class="accordion-body">
+                          <div class="callout callout-info">
+                            <p class="mb-0">Sơ đồ khối</p>
+                          </div>
+                          <form class="row gy-3 align-items-center px-2">
+                            <div class="col-12">
+                              <button
+                                class="btn btn-primary me-1 mb-1"
+                                type="button"
+                                onclick="findMin()"
+                              >
+                                Tìm số nhỏ nhất
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtMin">Kết Quả</span>
+                            </div>
+                          </form>
                         </div>
-                        <form class="row gy-3 align-items-center px-2">
-                          <div class="col-12">
-                            <button
-                              class="btn btn-primary me-1 mb-1"
-                              type="button"
-                              onclick="findMin()"
-                            >
-                              Tìm số nhỏ nhất
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtMin">Kết Quả</span>
-                          </div>
-                        </form>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFour"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFour"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          4️ - Tìm số dương nhỏ nhất
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFour"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
                       >
-                        4️ - Tìm số dương nhỏ nhất
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFour"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="callout callout-info">
-                          <p class="mb-0">Sơ đồ khối</p>
-                          <details>
-                            <summary>Mở rộng để xem thêm</summary>
+                        <div class="accordion-body">
+                          <div class="callout callout-info">
+                            <p class="mb-0">Sơ đồ khối</p>
+                            <details>
+                              <summary>Mở rộng để xem thêm</summary>
+                              <ul>
+                                <li>
+                                  Tạo thêm 1 mảng mới dùng để chứa các số dương
+                                </li>
+                                <li>
+                                  Dùng vòng lặp để lấy các số dương từ mảng cũ
+                                  và lưu vào trong mảng mới
+                                </li>
+                                <li>
+                                  Kiểm tra mảng mới có phần tử hay không. Nếu có
+                                  thì bắt đầu đi tìm giá trị dương nhỏ nhất.
+                                  Ngược lại thì thông báo không có số dương
+                                </li>
+                              </ul>
+                            </details>
+                          </div>
+                          <form class="row gy-3 align-items-center px-2">
+                            <div class="col-12">
+                              <button
+                                class="btn btn-primary me-1 mb-1"
+                                type="button"
+                                onclick="findMinPos()"
+                              >
+                                Tìm số dương nhỏ nhất
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtMinPos">Kết Quả</span>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseFive"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          5️ - Tìm số chẵn cuối cùng
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseFive"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="callout callout-info">
+                            <p class="mb-0">Sơ đồ khối</p>
+                            <details>
+                              <summary>Mở rộng để xem thêm</summary>
+                              <ul>
+                                <li>Tạo 1 biến chứa số chẵn cuối cùng</li>
+                                <li>
+                                  Dùng vòng lặp duyệt mảng và kiểm tra số chẵn.
+                                  Nếu là số chẵn thì gán vào biến.
+                                </li>
+                              </ul>
+                            </details>
+                          </div>
+                          <form class="row gy-3 align-items-center px-2">
+                            <div class="col-12">
+                              <button
+                                class="btn btn--primary me-1 mb-1"
+                                type="button"
+                                onclick="findEven()"
+                              >
+                                Tìm số chẵn
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtEven">Kết Quả</span>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseSix"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          6️ - Đổi chỗ
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseSix"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="callout callout-info">
+                            <p class="mb-0">Sơ đồ khối</p>
+                            <details>
+                              <summary>Mở rộng để xem thêm</summary>
+                              <ul>
+                                <li>
+                                  Vị trí là index của phần tử trong mảng. <br />
+                                  Để gán giá trị vào 1 vị trí(index) trong mảng
+                                  => array[index] = giá trị;
+                                </li>
+                                <li>
+                                  Tạo 1 biến tạm, gán giá trị của phần tử ở vị
+                                  trí 1 vào biến tạm
+                                </li>
+                                <li>
+                                  Gán giá trị của phần tử ở vị trí 2 vào vị trí
+                                  1
+                                </li>
+                                <li>Gán giá trị biến tạm vào vị trí 2</li>
+                              </ul>
+                            </details>
+                          </div>
+                          <form class="row gy-3 align-items-center px-2">
+                            <div class="col-12 col-lg-6">
+                              <input
+                                type="number"
+                                class="form-control form__input"
+                                id="inputIndex1"
+                                placeholder="Nhập số vị trí 1"
+                              />
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <input
+                                type="number"
+                                class="form-control form__input"
+                                id="inputIndex2"
+                                placeholder="Nhập số vị trí 2"
+                              />
+                            </div>
+                            <div class="col-12">
+                              <button
+                                class="btn btn-primary me-1 mb-1"
+                                type="button"
+                                onclick="changePosition()"
+                              >
+                                Đổi chỗ
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtChangePos">Kết Quả</span>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseSev"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          7️ - Sắp xếp tăng dần
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseSev"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="callout callout-info">
+                            <p class="mb-0">Sơ đồ khối</p>
+                          </div>
+                          <form class="row gy-3 align-items-center px-2">
+                            <div class="col-12">
+                              <button
+                                class="btn btn-primary me-1 mb-1"
+                                type="button"
+                                onclick="sortIncrease()"
+                              >
+                                Sắp xếp
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtIncrease">Kết Quả</span>
+                            </div>
+                          </form>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseE"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          8️ - Tìm số nguyên tố đầu tiên
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseE"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
+                      >
+                        <div class="accordion-body">
+                          <div class="callout callout-info">
+                            <p class="mb-0">Sơ đồ khối</p>
                             <ul>
                               <li>
-                                Tạo thêm 1 mảng mới dùng để chứa các số dương
-                              </li>
-                              <li>
-                                Dùng vòng lặp để lấy các số dương từ mảng cũ và
-                                lưu vào trong mảng mới
-                              </li>
-                              <li>
-                                Kiểm tra mảng mới có phần tử hay không. Nếu có
-                                thì bắt đầu đi tìm giá trị dương nhỏ nhất. Ngược
-                                lại thì thông báo không có số dương
+                                Khi tìm thấy số nguyên tố đầu tiên thì dùng lệnh
+                                dừng vòng lặp (break) để không duyệt những số
+                                tiếp theo trong mảng
                               </li>
                             </ul>
-                          </details>
+                          </div>
+                          <form class="row gy-3 align-items-center px-2">
+                            <div class="col-12">
+                              <button
+                                class="btn btn-primary me-1 mb-1"
+                                type="button"
+                                onclick="findPrime()"
+                              >
+                                Tìm số nguyên tố
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtPrime">Kết Quả</span>
+                            </div>
+                          </form>
                         </div>
-                        <form class="row gy-3 align-items-center px-2">
-                          <div class="col-12">
-                            <button
-                              class="btn btn-primary me-1 mb-1"
-                              type="button"
-                              onclick="findMinPos()"
-                            >
-                              Tìm số dương nhỏ nhất
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtMinPos">Kết Quả</span>
-                          </div>
-                        </form>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseFive"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseNine"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          9️ - Đếm số nguyên
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseNine"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
                       >
-                        5️ - Tìm số chẵn cuối cùng
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseFive"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="callout callout-info">
-                          <p class="mb-0">Sơ đồ khối</p>
-                          <details>
-                            <summary>Mở rộng để xem thêm</summary>
-                            <ul>
-                              <li>Tạo 1 biến chứa số chẵn cuối cùng</li>
-                              <li>
-                                Dùng vòng lặp duyệt mảng và kiểm tra số chẵn.
-                                Nếu là số chẵn thì gán vào biến.
-                              </li>
-                            </ul>
-                          </details>
-                        </div>
-                        <form class="row gy-3 align-items-center px-2">
-                          <div class="col-12">
-                            <button
-                              class="btn btn--primary me-1 mb-1"
-                              type="button"
-                              onclick="findEven()"
-                            >
-                              Tìm số chẵn
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtEven">Kết Quả</span>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseSix"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        6️ - Đổi chỗ
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseSix"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="callout callout-info">
-                          <p class="mb-0">Sơ đồ khối</p>
-                          <details>
-                            <summary>Mở rộng để xem thêm</summary>
+                        <div class="accordion-body">
+                          <div class="callout callout-info">
+                            <p class="mb-0">Sơ đồ khối</p>
                             <ul>
                               <li>
-                                Vị trí là index của phần tử trong mảng. <br />
-                                Để gán giá trị vào 1 vị trí(index) trong mảng =>
-                                array[index] = giá trị;
+                                Sử dụng
+                                <a>.</a>
+                                .
                               </li>
-                              <li>
-                                Tạo 1 biến tạm, gán giá trị của phần tử ở vị trí
-                                1 vào biến tạm
-                              </li>
-                              <li>
-                                Gán giá trị của phần tử ở vị trí 2 vào vị trí 1
-                              </li>
-                              <li>Gán giá trị biến tạm vào vị trí 2</li>
                             </ul>
-                          </details>
+                          </div>
+                          <form class="row gy-3 align-items-center py-3">
+                            <div class="col-12 col-lg-6">
+                              <input
+                                type="number"
+                                class="form-control form__input"
+                                id="inputFloat"
+                                placeholder="Nhập số"
+                              />
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <button
+                                class="btn btn-primary me-1 mb-1"
+                                type="button"
+                                onclick="getFloat()"
+                              >
+                                Thêm số
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtArrayFloat">=></span>
+                            </div>
+                            <div class="col-12 col-lg-6">
+                              <button
+                                class="btn btn--primary me-1 mb-1"
+                                type="button"
+                                onclick="findInt()"
+                              >
+                                Đếm số nguyên
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtInt">Kết Quả</span>
+                            </div>
+                          </form>
                         </div>
-                        <form class="row gy-3 align-items-center px-2">
-                          <div class="col-12 col-lg-6">
-                            <input
-                              type="number"
-                              class="form-control form__input"
-                              id="inputIndex1"
-                              placeholder="Nhập số vị trí 1"
-                            />
-                          </div>
-                          <div class="col-12 col-lg-6">
-                            <input
-                              type="number"
-                              class="form-control form__input"
-                              id="inputIndex2"
-                              placeholder="Nhập số vị trí 2"
-                            />
-                          </div>
-                          <div class="col-12">
-                            <button
-                              class="btn btn-primary me-1 mb-1"
-                              type="button"
-                              onclick="changePosition()"
-                            >
-                              Đổi chỗ
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtChangePos">Kết Quả</span>
-                          </div>
-                        </form>
                       </div>
                     </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseSev"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
+                    <div class="accordion-item">
+                      <h2 class="accordion-header" id="headingTwo">
+                        <button
+                          class="accordion-button collapsed"
+                          type="button"
+                          data-bs-toggle="collapse"
+                          data-bs-target="#collapseTen"
+                          aria-expanded="false"
+                          aria-controls="collapseTwo"
+                        >
+                          10 - So sánh số lượng số âm và dương
+                        </button>
+                      </h2>
+                      <div
+                        id="collapseTen"
+                        class="accordion-collapse collapse"
+                        aria-labelledby="headingTwo"
+                        data-bs-parent="#accordionExample"
                       >
-                        7️ - Sắp xếp tăng dần
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseSev"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="callout callout-info">
-                          <p class="mb-0">Sơ đồ khối</p>
+                        <div class="accordion-body">
+                          <div class="callout callout-info">
+                            <p class="mb-0">Sơ đồ khối</p>
+                            <ul>
+                              <li>
+                                Đếm số lượng sô âm và số dương. Sau đó so sánh
+                                số lượng của 2 loại
+                              </li>
+                            </ul>
+                          </div>
+                          <form class="row gy-3 align-items-center px-2">
+                            <div class="col-12">
+                              <button
+                                class="btn btn--primary me-1 mb-1"
+                                type="button"
+                                onclick="compareNum()"
+                              >
+                                So sánh
+                              </button>
+                            </div>
+                            <div class="alert alert-success" role="alert">
+                              <span id="txtCompare">Kết Quả</span>
+                            </div>
+                          </form>
                         </div>
-                        <form class="row gy-3 align-items-center px-2">
-                          <div class="col-12">
-                            <button
-                              class="btn btn-primary me-1 mb-1"
-                              type="button"
-                              onclick="sortIncrease()"
-                            >
-                              Sắp xếp
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtIncrease">Kết Quả</span>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseE"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        8️ - Tìm số nguyên tố đầu tiên
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseE"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="callout callout-info">
-                          <p class="mb-0">Sơ đồ khối</p>
-                          <ul>
-                            <li>
-                              Khi tìm thấy số nguyên tố đầu tiên thì dùng lệnh
-                              dừng vòng lặp (break) để không duyệt những số tiếp
-                              theo trong mảng
-                            </li>
-                          </ul>
-                        </div>
-                        <form class="row gy-3 align-items-center px-2">
-                          <div class="col-12">
-                            <button
-                              class="btn btn-primary me-1 mb-1"
-                              type="button"
-                              onclick="findPrime()"
-                            >
-                              Tìm số nguyên tố
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtPrime">Kết Quả</span>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseNine"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        9️ - Đếm số nguyên
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseNine"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="callout callout-info">
-                          <p class="mb-0">Sơ đồ khối</p>
-                          <ul>
-                            <li>
-                              Sử dụng
-                              <a>.</a>
-                              .
-                            </li>
-                          </ul>
-                        </div>
-                        <form class="row gy-3 align-items-center py-3">
-                          <div class="col-12 col-lg-6">
-                            <input
-                              type="number"
-                              class="form-control form__input"
-                              id="inputFloat"
-                              placeholder="Nhập số"
-                            />
-                          </div>
-                          <div class="col-12 col-lg-6">
-                            <button
-                              class="btn btn-primary me-1 mb-1"
-                              type="button"
-                              onclick="getFloat()"
-                            >
-                              Thêm số
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtArrayFloat">=></span>
-                          </div>
-                          <div class="col-12 col-lg-6">
-                            <button
-                              class="btn btn--primary me-1 mb-1"
-                              type="button"
-                              onclick="findInt()"
-                            >
-                              Đếm số nguyên
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtInt">Kết Quả</span>
-                          </div>
-                        </form>
-                      </div>
-                    </div>
-                  </div>
-                  <div class="accordion-item">
-                    <h2 class="accordion-header" id="headingTwo">
-                      <button
-                        class="accordion-button collapsed"
-                        type="button"
-                        data-bs-toggle="collapse"
-                        data-bs-target="#collapseTen"
-                        aria-expanded="false"
-                        aria-controls="collapseTwo"
-                      >
-                        10 - So sánh số lượng số âm và dương
-                      </button>
-                    </h2>
-                    <div
-                      id="collapseTen"
-                      class="accordion-collapse collapse"
-                      aria-labelledby="headingTwo"
-                      data-bs-parent="#accordionExample"
-                    >
-                      <div class="accordion-body">
-                        <div class="callout callout-info">
-                          <p class="mb-0">Sơ đồ khối</p>
-                          <ul>
-                            <li>
-                              Đếm số lượng sô âm và số dương. Sau đó so sánh số
-                              lượng của 2 loại
-                            </li>
-                          </ul>
-                        </div>
-                        <form class="row gy-3 align-items-center px-2">
-                          <div class="col-12">
-                            <button
-                              class="btn btn--primary me-1 mb-1"
-                              type="button"
-                              onclick="compareNum()"
-                            >
-                              So sánh
-                            </button>
-                          </div>
-                          <div class="alert alert-success" role="alert">
-                            <span id="txtCompare">Kết Quả</span>
-                          </div>
-                        </form>
                       </div>
                     </div>
                   </div>
